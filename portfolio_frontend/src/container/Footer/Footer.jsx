@@ -70,8 +70,10 @@ const handleSubmit = () => {
             onChange={handleChangeInput}
             />
           </div>
-
-          <button type='button' className='p-text' onClick={handleSubmit}>{loading ? "sending" : "Send Message"}</button>
+          <button class="glow-on-hover" type="button" onClick={handleSubmit}>
+          {loading ? "sending" : "Send Message"}
+      </button>
+         {/*<button type='button' className='p-text' onClick={handleSubmit}>{loading ? "sending" : "Send Message"}</button> */} 
         </div>
 
         : 
